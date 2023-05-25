@@ -51,7 +51,7 @@ class CompassView extends View{
         canvas.drawText("피치:" + pitch,100,750,paint);
         canvas.drawText("롤:" + roll,100,825,paint);
 
-        canvas.rotate(azimuth, 250,250);
+        canvas.rotate(-azimuth, 250,250);
         paint.setColor(Color.YELLOW);
 
         canvas.drawCircle(250,250,200, paint);
